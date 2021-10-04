@@ -71,13 +71,13 @@ taxii2-client=2.3.0
 First clone the project
 
 ```
-git clone <LINK>
+git clone https://github.com/chihebchebbi/Automated-Threat-Informed-Defense-Assessment-Tool
 ```
 Install the required libraries
 
 ```
-cd tool
-python3 tool -r requirements.txt
+cd Automated-Threat-Informed-Defense-Assessment-Tool
+pip3 install -r requirements.txt
 ```
 Edit the configuration file located at 'Config/Config.toml' with the Azure Sentinel API credentials
 
@@ -88,6 +88,12 @@ Client_Secret = <Client_Secret Here>
 ResourceGroup =  <ResourceGroup Here>
 Workspace =  <Workspace Here>
 Subscription = <Subscription Here> 
+```
+
+To run the project simply type:
+
+```
+python3 ATIDA.py
 ```
 
 ### Video Demonstration
