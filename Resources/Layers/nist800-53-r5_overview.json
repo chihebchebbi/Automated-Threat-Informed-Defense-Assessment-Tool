@@ -1,0 +1,5621 @@
+{
+	"name": "nist800-53-r5 overview",
+	"versions": {
+		"attack": "9",
+		"navigator": "4.3",
+		"layer": "4.2"
+	},
+	"domain": "enterprise-attack",
+	"description": "nist800-53-r5 heatmap overview of control mappings, where scores are the number of associated controls",
+	"filters": {
+		"platforms": [
+			"Linux",
+			"macOS",
+			"Windows",
+			"Azure AD",
+			"Office 365",
+			"SaaS",
+			"IaaS",
+			"Google Workspace",
+			"PRE",
+			"Network",
+			"Containers"
+		]
+	},
+	"sorting": 3,
+	"layout": {
+		"layout": "side",
+		"aggregateFunction": "average",
+		"showID": false,
+		"showName": true,
+		"showAggregateScores": false,
+		"countUnscored": false
+	},
+	"hideDisabled": false,
+	"techniques": [
+		{
+			"techniqueID": "T1078",
+			"tactic": "defense-evasion",
+			"score": 24,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CA-8, CM-5, CM-6, IA-12, IA-2, IA-5, PL-8, RA-5, SA-10, SA-11, SA-12, SA-15, SA-16, SA-17, SA-3, SA-4, SA-8, SC-28, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1078",
+			"tactic": "persistence",
+			"score": 24,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CA-8, CM-5, CM-6, IA-12, IA-2, IA-5, PL-8, RA-5, SA-10, SA-11, SA-12, SA-15, SA-16, SA-17, SA-3, SA-4, SA-8, SC-28, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1078",
+			"tactic": "privilege-escalation",
+			"score": 24,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CA-8, CM-5, CM-6, IA-12, IA-2, IA-5, PL-8, RA-5, SA-10, SA-11, SA-12, SA-15, SA-16, SA-17, SA-3, SA-4, SA-8, SC-28, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1078",
+			"tactic": "initial-access",
+			"score": 24,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CA-8, CM-5, CM-6, IA-12, IA-2, IA-5, PL-8, RA-5, SA-10, SA-11, SA-12, SA-15, SA-16, SA-17, SA-3, SA-4, SA-8, SC-28, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1574.002",
+			"tactic": "persistence",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by SA-10, SA-11, SA-15, SA-16, SA-17, SA-3, SA-4, SA-8, SI-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.002",
+			"tactic": "privilege-escalation",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by SA-10, SA-11, SA-15, SA-16, SA-17, SA-3, SA-4, SA-8, SI-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.002",
+			"tactic": "defense-evasion",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by SA-10, SA-11, SA-15, SA-16, SA-17, SA-3, SA-4, SA-8, SI-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003.005",
+			"tactic": "credential-access",
+			"score": 17,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, CM-7, IA-2, IA-4, IA-5, SC-28, SC-39, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003.006",
+			"tactic": "credential-access",
+			"score": 16,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, IA-2, IA-4, IA-5, SC-28, SC-39, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003",
+			"tactic": "credential-access",
+			"score": 21,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-2, AC-3, AC-4, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, CM-7, CP-9, IA-2, IA-4, IA-5, SC-28, SC-39, SI-12, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1072",
+			"tactic": "execution",
+			"score": 24,
+			"color": "",
+			"comment": "Mitigated by AC-12, AC-2, AC-20, AC-3, AC-4, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, CM-7, CM-8, IA-2, IA-5, SC-12, SC-17, SC-46, SC-7, SI-2, SI-23, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1072",
+			"tactic": "lateral-movement",
+			"score": 24,
+			"color": "",
+			"comment": "Mitigated by AC-12, AC-2, AC-20, AC-3, AC-4, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, CM-7, CM-8, IA-2, IA-5, SC-12, SC-17, SC-46, SC-7, SI-2, SI-23, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1134.005",
+			"tactic": "defense-evasion",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-20, AC-3, AC-4, AC-5, AC-6, CM-2, CM-6, SA-11, SA-17, SA-4, SA-8, SC-3",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1134.005",
+			"tactic": "privilege-escalation",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-20, AC-3, AC-4, AC-5, AC-6, CM-2, CM-6, SA-11, SA-17, SA-4, SA-8, SC-3",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1550.003",
+			"tactic": "defense-evasion",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, IA-2, IA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1550.003",
+			"tactic": "lateral-movement",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, IA-2, IA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1552.006",
+			"tactic": "credential-access",
+			"score": 13,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-5, AC-6, CA-8, CM-2, CM-6, IA-2, IA-5, RA-5, SA-11, SA-15, SI-2, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1552",
+			"tactic": "credential-access",
+			"score": 33,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-18, AC-19, AC-2, AC-20, AC-3, AC-4, AC-5, AC-6, CA-7, CA-8, CM-2, CM-5, CM-6, CM-7, IA-2, IA-3, IA-4, IA-5, RA-5, SA-11, SA-15, SC-12, SC-28, SC-4, SC-7, SI-10, SI-12, SI-15, SI-2, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1558.001",
+			"tactic": "credential-access",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-2, CM-5, CM-6, IA-2, IA-5",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1558",
+			"tactic": "credential-access",
+			"score": 19,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-18, AC-19, AC-2, AC-3, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, IA-2, IA-5, SC-4, SI-12, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1190",
+			"tactic": "initial-access",
+			"score": 29,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-2, CA-7, CM-5, CM-6, CM-7, CM-8, IA-2, IA-8, RA-10, RA-5, SA-8, SC-18, SC-2, SC-29, SC-3, SC-30, SC-39, SC-46, SC-7, SI-10, SI-2, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1195.001",
+			"tactic": "initial-access",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by CA-2, CA-7, CM-11, CM-7, RA-10, RA-5, SA-22, SI-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1195.002",
+			"tactic": "initial-access",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by CA-2, CA-7, CM-11, CM-7, RA-10, RA-5, SA-22, SI-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1195",
+			"tactic": "initial-access",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by CA-2, CA-7, CM-11, CM-7, RA-10, RA-5, SA-22, SI-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1210",
+			"tactic": "lateral-movement",
+			"score": 32,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-2, CA-7, CA-8, CM-2, CM-5, CM-6, CM-7, CM-8, IA-2, IA-8, RA-10, RA-5, SC-18, SC-2, SC-26, SC-29, SC-3, SC-30, SC-35, SC-39, SC-46, SC-7, SI-2, SI-3, SI-4, SI-5, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003.004",
+			"tactic": "credential-access",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, IA-2, IA-5, SC-28, SC-39, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003.001",
+			"tactic": "credential-access",
+			"score": 16,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, CM-7, IA-2, IA-5, SC-28, SC-39, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003.003",
+			"tactic": "credential-access",
+			"score": 18,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-2, AC-3, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, CP-9, IA-2, IA-5, SC-28, SC-39, SI-12, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003.002",
+			"tactic": "credential-access",
+			"score": 15,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, CM-7, IA-2, IA-5, SC-28, SC-39, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1056.002",
+			"tactic": "collection",
+			"score": 4,
+			"color": "",
+			"comment": "Mitigated by CA-7, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1056.002",
+			"tactic": "credential-access",
+			"score": 4,
+			"color": "",
+			"comment": "Mitigated by CA-7, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1111",
+			"tactic": "credential-access",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by CA-7, CM-2, CM-6, IA-2, IA-5, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1176",
+			"tactic": "persistence",
+			"score": 15,
+			"color": "",
+			"comment": "Mitigated by AC-6, CA-7, CA-8, CM-11, CM-2, CM-3, CM-5, CM-6, CM-7, RA-5, SC-7, SI-10, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1185",
+			"tactic": "collection",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CM-2, CM-5, IA-2, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1204.002",
+			"tactic": "execution",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, CM-7, SC-44, SC-7, SI-10, SI-3, SI-4, SI-7, SI-8",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1204.003",
+			"tactic": "execution",
+			"score": 18,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CA-8, CM-2, CM-6, CM-7, RA-5, SC-44, SC-7, SI-2, SI-3, SI-4, SI-7, SI-8, SR-11, SR-4, SR-5, SR-6",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1204.001",
+			"tactic": "execution",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, CM-7, SC-44, SC-7, SI-2, SI-3, SI-4, SI-8",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1204",
+			"tactic": "execution",
+			"score": 13,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, CM-7, SC-44, SC-7, SI-10, SI-2, SI-3, SI-4, SI-7, SI-8",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1213.001",
+			"tactic": "collection",
+			"score": 24,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-2, AC-21, AC-23, AC-3, AC-4, AC-5, AC-6, CA-7, CA-8, CM-2, CM-3, CM-5, CM-6, CM-7, CM-8, IA-2, IA-4, IA-8, RA-5, SC-28, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1213",
+			"tactic": "collection",
+			"score": 24,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-2, AC-21, AC-23, AC-3, AC-4, AC-5, AC-6, CA-7, CA-8, CM-2, CM-3, CM-5, CM-6, CM-7, CM-8, IA-2, IA-4, IA-8, RA-5, SC-28, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1213.002",
+			"tactic": "collection",
+			"score": 24,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-2, AC-21, AC-23, AC-3, AC-4, AC-5, AC-6, CA-7, CA-8, CM-2, CM-3, CM-5, CM-6, CM-7, CM-8, IA-2, IA-4, IA-8, RA-5, SC-28, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1221",
+			"tactic": "defense-evasion",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by CA-7, CM-2, CM-6, CM-7, CM-8, RA-5, SC-44, SC-7, SI-10, SI-2, SI-3, SI-4, SI-7, SI-8",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1528",
+			"tactic": "credential-access",
+			"score": 19,
+			"color": "",
+			"comment": "Mitigated by AC-10, AC-2, AC-3, AC-4, AC-5, AC-6, CA-7, CA-8, CM-2, CM-5, CM-6, IA-2, IA-4, IA-5, IA-8, RA-5, SA-11, SA-15, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1539",
+			"tactic": "credential-access",
+			"score": 10,
+			"color": "",
+			"comment": "Mitigated by AC-20, AC-3, AC-6, CA-7, CM-2, CM-6, IA-2, IA-5, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.011",
+			"tactic": "persistence",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-3, AC-6, CA-7, CM-2, CM-3, CM-5, CM-6, CM-7, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.011",
+			"tactic": "privilege-escalation",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-3, AC-6, CA-7, CM-2, CM-3, CM-5, CM-6, CM-7, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.007",
+			"tactic": "persistence",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-3, CM-2, CM-3, CM-5, CM-6, CM-7, CM-8, RA-5, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.007",
+			"tactic": "privilege-escalation",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-3, CM-2, CM-3, CM-5, CM-6, CM-7, CM-8, RA-5, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1552.001",
+			"tactic": "credential-access",
+			"score": 18,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-4, AC-5, AC-6, CA-7, CA-8, CM-2, CM-6, IA-2, IA-5, RA-5, SA-11, SA-15, SC-12, SC-28, SC-4, SC-7, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1557.002",
+			"tactic": "credential-access",
+			"score": 22,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-18, AC-19, AC-20, AC-3, AC-4, CA-7, CM-2, CM-6, CM-7, CM-8, SC-23, SC-4, SC-7, SC-8, SI-10, SI-12, SI-15, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1557.002",
+			"tactic": "collection",
+			"score": 22,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-18, AC-19, AC-20, AC-3, AC-4, CA-7, CM-2, CM-6, CM-7, CM-8, SC-23, SC-4, SC-7, SC-8, SI-10, SI-12, SI-15, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1557",
+			"tactic": "credential-access",
+			"score": 24,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-18, AC-19, AC-20, AC-3, AC-4, CA-7, CM-2, CM-6, CM-7, CM-8, RA-5, SC-23, SC-4, SC-46, SC-7, SC-8, SI-10, SI-12, SI-15, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1557",
+			"tactic": "collection",
+			"score": 24,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-18, AC-19, AC-20, AC-3, AC-4, CA-7, CM-2, CM-6, CM-7, CM-8, RA-5, SC-23, SC-4, SC-46, SC-7, SC-8, SI-10, SI-12, SI-15, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1566",
+			"tactic": "initial-access",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, IA-9, SC-20, SC-44, SC-7, SI-2, SI-3, SI-4, SI-8",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1566.001",
+			"tactic": "initial-access",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, IA-9, SC-20, SC-44, SC-7, SI-2, SI-3, SI-4, SI-8",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1566.002",
+			"tactic": "initial-access",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, IA-9, SC-20, SC-44, SC-7, SI-3, SI-4, SI-8",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1566.003",
+			"tactic": "initial-access",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, SC-44, SC-7, SI-2, SI-3, SI-4, SI-8",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1598",
+			"tactic": "reconnaissance",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, IA-9, SC-20, SC-44, SC-7, SI-3, SI-4, SI-8",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1598.002",
+			"tactic": "reconnaissance",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, IA-9, SC-20, SC-44, SC-7, SI-3, SI-4, SI-8",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1598.003",
+			"tactic": "reconnaissance",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, IA-9, SC-20, SC-44, SC-7, SI-3, SI-4, SI-8",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1598.001",
+			"tactic": "reconnaissance",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, SC-44, SC-7, SI-3, SI-4, SI-8",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1021.001",
+			"tactic": "lateral-movement",
+			"score": 24,
+			"color": "",
+			"comment": "Mitigated by AC-11, AC-12, AC-17, AC-2, AC-20, AC-3, AC-4, AC-5, AC-6, AC-7, CA-8, CM-2, CM-5, CM-6, CM-7, CM-8, IA-2, IA-4, IA-5, IA-6, RA-5, SC-46, SC-7, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1021",
+			"tactic": "lateral-movement",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-20, AC-3, AC-5, AC-6, AC-7, CM-5, CM-6, IA-2, IA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1021.004",
+			"tactic": "lateral-movement",
+			"score": 15,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-20, AC-3, AC-5, AC-6, AC-7, CM-2, CM-5, CM-6, CM-8, IA-2, IA-5, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1047",
+			"tactic": "execution",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-3, AC-5, AC-6, CM-5, CM-6, IA-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.001",
+			"tactic": "execution",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-5, IA-2, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.001",
+			"tactic": "persistence",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-5, IA-2, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.001",
+			"tactic": "privilege-escalation",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-5, IA-2, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.002",
+			"tactic": "execution",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-2, CM-5, CM-6, CM-7, CM-8, IA-2, IA-4, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.002",
+			"tactic": "persistence",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-2, CM-5, CM-6, CM-7, CM-8, IA-2, IA-4, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.002",
+			"tactic": "privilege-escalation",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-2, CM-5, CM-6, CM-7, CM-8, IA-2, IA-4, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.003",
+			"tactic": "execution",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-5, IA-2, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.003",
+			"tactic": "persistence",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-5, IA-2, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.003",
+			"tactic": "privilege-escalation",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-5, IA-2, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.004",
+			"tactic": "execution",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-5, IA-2, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.004",
+			"tactic": "persistence",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-5, IA-2, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.004",
+			"tactic": "privilege-escalation",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-5, IA-2, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.005",
+			"tactic": "execution",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-2, CM-5, CM-6, CM-7, CM-8, IA-2, IA-4, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.005",
+			"tactic": "persistence",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-2, CM-5, CM-6, CM-7, CM-8, IA-2, IA-4, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.005",
+			"tactic": "privilege-escalation",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-2, CM-5, CM-6, CM-7, CM-8, IA-2, IA-4, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053",
+			"tactic": "execution",
+			"score": 15,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-2, CM-5, CM-6, CM-7, CM-8, IA-2, IA-4, IA-8, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1053",
+			"tactic": "persistence",
+			"score": 15,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-2, CM-5, CM-6, CM-7, CM-8, IA-2, IA-4, IA-8, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1053",
+			"tactic": "privilege-escalation",
+			"score": 15,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-2, CM-5, CM-6, CM-7, CM-8, IA-2, IA-4, IA-8, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1053.006",
+			"tactic": "execution",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CM-5, IA-2, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.006",
+			"tactic": "persistence",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CM-5, IA-2, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.006",
+			"tactic": "privilege-escalation",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CM-5, IA-2, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.007",
+			"tactic": "execution",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, IA-2, IA-8",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.007",
+			"tactic": "persistence",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, IA-2, IA-8",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053.007",
+			"tactic": "privilege-escalation",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, IA-2, IA-8",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059.008",
+			"tactic": "execution",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, CM-6, IA-2, IA-8, SI-10, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.004",
+			"tactic": "defense-evasion",
+			"score": 22,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, AC-7, CA-7, CM-5, CM-6, IA-12, IA-2, IA-5, SA-10, SA-11, SA-15, SA-16, SA-17, SA-3, SA-4, SA-8, SC-28, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.004",
+			"tactic": "persistence",
+			"score": 22,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, AC-7, CA-7, CM-5, CM-6, IA-12, IA-2, IA-5, SA-10, SA-11, SA-15, SA-16, SA-17, SA-3, SA-4, SA-8, SC-28, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.004",
+			"tactic": "privilege-escalation",
+			"score": 22,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, AC-7, CA-7, CM-5, CM-6, IA-12, IA-2, IA-5, SA-10, SA-11, SA-15, SA-16, SA-17, SA-3, SA-4, SA-8, SC-28, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.004",
+			"tactic": "initial-access",
+			"score": 22,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, AC-7, CA-7, CM-5, CM-6, IA-12, IA-2, IA-5, SA-10, SA-11, SA-15, SA-16, SA-17, SA-3, SA-4, SA-8, SC-28, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1087.004",
+			"tactic": "discovery",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, IA-2, IA-8",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1110",
+			"tactic": "credential-access",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, AC-7, CA-7, CM-2, CM-6, IA-11, IA-2, IA-4, IA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1110.004",
+			"tactic": "credential-access",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, AC-7, CA-7, CM-2, CM-6, IA-11, IA-2, IA-4, IA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1134",
+			"tactic": "defense-evasion",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, CM-6, IA-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1134",
+			"tactic": "privilege-escalation",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, CM-6, IA-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1134.002",
+			"tactic": "defense-evasion",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, CM-6, IA-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1134.002",
+			"tactic": "privilege-escalation",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, CM-6, IA-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1134.003",
+			"tactic": "defense-evasion",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, CM-6, IA-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1134.003",
+			"tactic": "privilege-escalation",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, CM-6, IA-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1134.001",
+			"tactic": "defense-evasion",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, CM-6, IA-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1134.001",
+			"tactic": "privilege-escalation",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, CM-6, IA-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1197",
+			"tactic": "defense-evasion",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-7, CM-5, CM-6, CM-7, IA-2, SC-7, SI-10, SI-15, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1197",
+			"tactic": "persistence",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-7, CM-5, CM-6, CM-7, IA-2, SC-7, SI-10, SI-15, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1484",
+			"tactic": "defense-evasion",
+			"score": 13,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-8, CM-2, CM-5, CM-6, CM-7, IA-2, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1484",
+			"tactic": "privilege-escalation",
+			"score": 13,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-8, CM-2, CM-5, CM-6, CM-7, IA-2, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1489",
+			"tactic": "impact",
+			"score": 13,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-7, CM-5, CM-6, CM-7, IA-2, SC-46, SC-7, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1530",
+			"tactic": "collection",
+			"score": 33,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-18, AC-19, AC-2, AC-20, AC-3, AC-4, AC-5, AC-6, AC-7, CA-7, CA-8, CM-2, CM-5, CM-6, CM-7, CM-8, IA-2, IA-3, IA-4, IA-5, IA-6, IA-8, RA-5, SC-28, SC-4, SC-7, SI-10, SI-12, SI-15, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1537",
+			"tactic": "exfiltration",
+			"score": 20,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-2, AC-20, AC-3, AC-4, AC-5, AC-6, CA-7, CM-5, CM-6, CM-7, IA-2, IA-3, IA-4, IA-8, SC-7, SI-10, SI-15, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1538",
+			"tactic": "discovery",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, IA-2, IA-8",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543",
+			"tactic": "persistence",
+			"score": 21,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-3, AC-5, AC-6, CA-7, CA-8, CM-11, CM-2, CM-3, CM-5, CM-6, CM-7, IA-2, IA-4, RA-5, SA-22, SI-16, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1543",
+			"tactic": "privilege-escalation",
+			"score": 21,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-3, AC-5, AC-6, CA-7, CA-8, CM-11, CM-2, CM-3, CM-5, CM-6, CM-7, IA-2, IA-4, RA-5, SA-22, SI-16, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1543.001",
+			"tactic": "persistence",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-11, CM-5, IA-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543.001",
+			"tactic": "privilege-escalation",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-11, CM-5, IA-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543.004",
+			"tactic": "persistence",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-11, CM-5, IA-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543.004",
+			"tactic": "privilege-escalation",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-11, CM-5, IA-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543.002",
+			"tactic": "persistence",
+			"score": 16,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CM-11, CM-2, CM-3, CM-5, CM-6, IA-2, SA-22, SI-16, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543.002",
+			"tactic": "privilege-escalation",
+			"score": 16,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CM-11, CM-2, CM-3, CM-5, CM-6, IA-2, SA-22, SI-16, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543.003",
+			"tactic": "persistence",
+			"score": 15,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-3, AC-5, AC-6, CA-8, CM-11, CM-2, CM-5, CM-6, CM-7, IA-2, IA-4, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543.003",
+			"tactic": "privilege-escalation",
+			"score": 15,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-3, AC-5, AC-6, CA-8, CM-11, CM-2, CM-5, CM-6, CM-7, IA-2, IA-4, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.003",
+			"tactic": "privilege-escalation",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, CM-6, IA-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.003",
+			"tactic": "persistence",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, CM-6, IA-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.012",
+			"tactic": "persistence",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-3, AC-5, AC-6, CM-5, IA-2, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.012",
+			"tactic": "privilege-escalation",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-3, AC-5, AC-6, CM-5, IA-2, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.009",
+			"tactic": "persistence",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-3, AC-5, AC-6, CM-5, IA-2, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.009",
+			"tactic": "privilege-escalation",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-3, AC-5, AC-6, CM-5, IA-2, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.004",
+			"tactic": "persistence",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-3, AC-5, AC-6, CM-5, CM-7, IA-2, SI-10, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.004",
+			"tactic": "privilege-escalation",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-3, AC-5, AC-6, CM-5, CM-7, IA-2, SI-10, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.013",
+			"tactic": "persistence",
+			"score": 15,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-3, AC-5, AC-6, CA-7, CM-11, CM-2, CM-3, CM-5, CM-6, IA-2, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.013",
+			"tactic": "privilege-escalation",
+			"score": 15,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-3, AC-5, AC-6, CA-7, CM-11, CM-2, CM-3, CM-5, CM-6, IA-2, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1550.002",
+			"tactic": "defense-evasion",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, CM-6, IA-2, SI-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1550.002",
+			"tactic": "lateral-movement",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, CM-6, IA-2, SI-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1550",
+			"tactic": "defense-evasion",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, CM-6, IA-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1550",
+			"tactic": "lateral-movement",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, CM-6, IA-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1562.008",
+			"tactic": "defense-evasion",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, IA-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1562.002",
+			"tactic": "defense-evasion",
+			"score": 13,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, CM-7, IA-2, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1562.007",
+			"tactic": "defense-evasion",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, IA-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1562.004",
+			"tactic": "defense-evasion",
+			"score": 13,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, CM-7, IA-2, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1562.001",
+			"tactic": "defense-evasion",
+			"score": 13,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, CM-7, IA-2, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1562",
+			"tactic": "defense-evasion",
+			"score": 16,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CA-8, CM-2, CM-5, CM-6, CM-7, IA-2, IA-4, RA-5, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1562.006",
+			"tactic": "defense-evasion",
+			"score": 13,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, IA-2, SC-8, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1563.002",
+			"tactic": "lateral-movement",
+			"score": 18,
+			"color": "",
+			"comment": "Mitigated by AC-11, AC-12, AC-17, AC-2, AC-3, AC-4, AC-5, AC-6, CM-2, CM-5, CM-6, CM-7, CM-8, IA-2, RA-5, SC-46, SC-7, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1563",
+			"tactic": "lateral-movement",
+			"score": 19,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-3, AC-4, AC-5, AC-6, CA-8, CM-2, CM-5, CM-6, CM-7, CM-8, IA-2, IA-4, IA-6, RA-5, SC-46, SC-7, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1569.001",
+			"tactic": "execution",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-11, CM-5, IA-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1569",
+			"tactic": "execution",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CM-11, CM-2, CM-5, CM-6, CM-7, IA-2, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1574.012",
+			"tactic": "persistence",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, CM-7, IA-2, SI-10, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.012",
+			"tactic": "privilege-escalation",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, CM-7, IA-2, SI-10, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.012",
+			"tactic": "defense-evasion",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, CM-7, IA-2, SI-10, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.005",
+			"tactic": "persistence",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-8, CM-2, CM-5, CM-6, IA-2, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.005",
+			"tactic": "privilege-escalation",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-8, CM-2, CM-5, CM-6, IA-2, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.005",
+			"tactic": "defense-evasion",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-8, CM-2, CM-5, CM-6, IA-2, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574",
+			"tactic": "persistence",
+			"score": 19,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-7, CA-8, CM-2, CM-5, CM-6, CM-7, CM-8, IA-2, RA-5, SI-10, SI-2, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1574",
+			"tactic": "privilege-escalation",
+			"score": 19,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-7, CA-8, CM-2, CM-5, CM-6, CM-7, CM-8, IA-2, RA-5, SI-10, SI-2, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1574",
+			"tactic": "defense-evasion",
+			"score": 19,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-7, CA-8, CM-2, CM-5, CM-6, CM-7, CM-8, IA-2, RA-5, SI-10, SI-2, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1574.010",
+			"tactic": "persistence",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-8, CM-2, CM-5, CM-6, IA-2, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.010",
+			"tactic": "privilege-escalation",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-8, CM-2, CM-5, CM-6, IA-2, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.010",
+			"tactic": "defense-evasion",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-8, CM-2, CM-5, CM-6, IA-2, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1578.002",
+			"tactic": "defense-evasion",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-5, IA-2, IA-4, IA-6, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1578.001",
+			"tactic": "defense-evasion",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-5, IA-2, IA-4, IA-6, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1578.003",
+			"tactic": "defense-evasion",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-5, IA-2, IA-4, IA-6, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1578",
+			"tactic": "defense-evasion",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-5, IA-2, IA-4, IA-6, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1580",
+			"tactic": "discovery",
+			"score": 5,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, IA-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1610",
+			"tactic": "defense-evasion",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-3, AC-6, CM-6, CM-7, IA-2, SC-7, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1610",
+			"tactic": "execution",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-3, AC-6, CM-6, CM-7, IA-2, SC-7, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1613",
+			"tactic": "discovery",
+			"score": 10,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-3, AC-6, CM-6, CM-7, IA-2, SC-43, SC-7, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1068",
+			"tactic": "privilege-escalation",
+			"score": 25,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-4, AC-6, CA-7, CA-8, CM-2, CM-6, CM-7, CM-8, RA-10, RA-5, SC-18, SC-2, SC-26, SC-29, SC-3, SC-30, SC-35, SC-39, SC-7, SI-2, SI-3, SI-4, SI-5, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1211",
+			"tactic": "defense-evasion",
+			"score": 23,
+			"color": "",
+			"comment": "Mitigated by AC-4, AC-6, CA-7, CA-8, CM-2, CM-6, CM-8, RA-10, RA-5, SC-18, SC-2, SC-26, SC-29, SC-3, SC-30, SC-35, SC-39, SC-7, SI-2, SI-3, SI-4, SI-5, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1212",
+			"tactic": "credential-access",
+			"score": 24,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-4, AC-6, CA-7, CA-8, CM-2, CM-6, CM-8, RA-10, RA-5, SC-18, SC-2, SC-26, SC-29, SC-3, SC-30, SC-35, SC-39, SC-7, SI-2, SI-3, SI-4, SI-5, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1090",
+			"tactic": "command-and-control",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-2, CM-6, CM-7, SC-7, SC-8, SI-10, SI-15, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1090.004",
+			"tactic": "command-and-control",
+			"score": 1,
+			"color": "",
+			"comment": "Mitigated by SC-8",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1573",
+			"tactic": "command-and-control",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, CM-7, SC-12, SC-16, SC-23, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1573.002",
+			"tactic": "command-and-control",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, CM-7, SC-12, SC-16, SC-23, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059",
+			"tactic": "execution",
+			"score": 21,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-11, CM-2, CM-5, CM-6, CM-7, CM-8, IA-2, IA-8, IA-9, RA-5, SC-18, SI-10, SI-2, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1059.007",
+			"tactic": "execution",
+			"score": 10,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-7, CM-8, RA-5, SC-18, SI-10, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059.005",
+			"tactic": "execution",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-7, CM-8, RA-5, SC-18, SI-10, SI-2, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1102.002",
+			"tactic": "command-and-control",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, CM-7, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1102.001",
+			"tactic": "command-and-control",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, CM-7, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1102.003",
+			"tactic": "command-and-control",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, CM-7, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1102",
+			"tactic": "command-and-control",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, CM-7, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1189",
+			"tactic": "initial-access",
+			"score": 18,
+			"color": "",
+			"comment": "Mitigated by AC-4, AC-6, CA-7, CM-2, CM-6, CM-8, SA-22, SC-18, SC-2, SC-29, SC-3, SC-30, SC-39, SC-7, SI-2, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218.001",
+			"tactic": "defense-evasion",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-7, SC-18, SI-10, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1550.001",
+			"tactic": "defense-evasion",
+			"score": 16,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-19, AC-20, CA-8, CM-10, CM-11, CM-2, CM-6, IA-2, IA-4, SC-28, SC-8, SI-12, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1550.001",
+			"tactic": "lateral-movement",
+			"score": 16,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-19, AC-20, CA-8, CM-10, CM-11, CM-2, CM-6, IA-2, IA-4, SC-28, SC-8, SI-12, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1567",
+			"tactic": "exfiltration",
+			"score": 3,
+			"color": "",
+			"comment": "Mitigated by AC-20, AC-4, SC-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1567.002",
+			"tactic": "exfiltration",
+			"score": 3,
+			"color": "",
+			"comment": "Mitigated by AC-20, AC-4, SC-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1567.001",
+			"tactic": "exfiltration",
+			"score": 3,
+			"color": "",
+			"comment": "Mitigated by AC-20, AC-4, SC-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1568.002",
+			"tactic": "command-and-control",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, SC-20, SC-21, SC-22, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1568",
+			"tactic": "command-and-control",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, SC-20, SC-21, SC-22, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1036",
+			"tactic": "defense-evasion",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-6, CA-7, CM-2, CM-6, CM-7, IA-9, SI-10, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1036.005",
+			"tactic": "defense-evasion",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-6, CA-7, CM-2, CM-6, CM-7, IA-9, SI-10, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1036.003",
+			"tactic": "defense-evasion",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-6, CA-7, CM-2, CM-6, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1037",
+			"tactic": "persistence",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-3, CA-7, CM-2, CM-6, CM-7, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1037",
+			"tactic": "privilege-escalation",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-3, CA-7, CM-2, CM-6, CM-7, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1037.002",
+			"tactic": "persistence",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-3, CA-7, CM-2, CM-6, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1037.002",
+			"tactic": "privilege-escalation",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-3, CA-7, CM-2, CM-6, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1037.003",
+			"tactic": "persistence",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-3, CA-7, CM-2, CM-6, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1037.003",
+			"tactic": "privilege-escalation",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-3, CA-7, CM-2, CM-6, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1037.004",
+			"tactic": "persistence",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-3, CA-7, CM-2, CM-6, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1037.004",
+			"tactic": "privilege-escalation",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-3, CA-7, CM-2, CM-6, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1037.005",
+			"tactic": "persistence",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-3, CA-7, CM-2, CM-6, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1037.005",
+			"tactic": "privilege-escalation",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-3, CA-7, CM-2, CM-6, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.009",
+			"tactic": "defense-evasion",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-6, CA-7, SC-18, SC-7, SI-16, SI-2, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.009",
+			"tactic": "privilege-escalation",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-6, CA-7, SC-18, SC-7, SI-16, SI-2, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1070.003",
+			"tactic": "defense-evasion",
+			"score": 10,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CM-2, CM-6, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1070.002",
+			"tactic": "defense-evasion",
+			"score": 21,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-18, AC-19, AC-2, AC-3, AC-5, AC-6, CA-7, CM-2, CM-6, CP-6, CP-7, CP-9, SC-36, SC-4, SI-12, SI-23, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1070.001",
+			"tactic": "defense-evasion",
+			"score": 21,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-18, AC-19, AC-2, AC-3, AC-5, AC-6, CA-7, CM-2, CM-6, CP-6, CP-7, CP-9, SC-36, SC-4, SI-12, SI-23, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1070",
+			"tactic": "defense-evasion",
+			"score": 21,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-18, AC-19, AC-2, AC-3, AC-5, AC-6, CA-7, CM-2, CM-6, CP-6, CP-7, CP-9, SC-36, SC-4, SI-12, SI-23, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1080",
+			"tactic": "lateral-movement",
+			"score": 10,
+			"color": "",
+			"comment": "Mitigated by AC-3, CA-7, CM-2, CM-7, SC-4, SC-7, SI-10, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1098.004",
+			"tactic": "persistence",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-3, CM-2, CM-6, CM-7, CM-8, RA-5, SC-12, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218.002",
+			"tactic": "defense-evasion",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-3, CA-7, CM-2, CM-6, CM-7, SI-10, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1222",
+			"tactic": "defense-evasion",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-2, AC-3, AC-5, AC-6, CA-7, CM-5, CM-6, IA-2, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1222.002",
+			"tactic": "defense-evasion",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-2, AC-3, AC-5, AC-6, CA-7, CM-5, CM-6, IA-2, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1222.001",
+			"tactic": "defense-evasion",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-2, AC-3, AC-5, AC-6, CA-7, CM-5, CM-6, IA-2, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.013",
+			"tactic": "privilege-escalation",
+			"score": 10,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-6, CA-7, CM-10, CM-2, CM-6, IA-9, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.013",
+			"tactic": "persistence",
+			"score": 10,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-6, CA-7, CM-10, CM-2, CM-6, IA-9, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.004",
+			"tactic": "privilege-escalation",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-6, CA-7, CM-2, CM-6, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.004",
+			"tactic": "persistence",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-6, CA-7, CM-2, CM-6, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.003",
+			"tactic": "persistence",
+			"score": 10,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-3, AC-4, AC-6, CA-7, CM-2, CM-5, CM-6, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.003",
+			"tactic": "privilege-escalation",
+			"score": 10,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-3, AC-4, AC-6, CA-7, CM-2, CM-5, CM-6, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1548",
+			"tactic": "privilege-escalation",
+			"score": 21,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-2, AC-3, AC-5, AC-6, CA-7, CA-8, CM-2, CM-5, CM-6, CM-7, CM-8, IA-2, RA-5, SC-18, SC-34, SI-12, SI-16, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1548",
+			"tactic": "defense-evasion",
+			"score": 21,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-2, AC-3, AC-5, AC-6, CA-7, CA-8, CM-2, CM-5, CM-6, CM-7, CM-8, IA-2, RA-5, SC-18, SC-34, SI-12, SI-16, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1548.003",
+			"tactic": "privilege-escalation",
+			"score": 13,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-2, AC-3, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, CM-7, IA-2, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1548.003",
+			"tactic": "defense-evasion",
+			"score": 13,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-2, AC-3, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, CM-7, IA-2, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1552.004",
+			"tactic": "credential-access",
+			"score": 22,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-18, AC-19, AC-2, AC-20, CA-7, CA-8, CM-2, CM-6, IA-2, IA-5, RA-5, SA-11, SA-15, SC-12, SC-28, SC-4, SC-7, SI-12, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1553.003",
+			"tactic": "defense-evasion",
+			"score": 10,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-6, CA-7, CM-2, CM-6, CM-7, SI-10, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556",
+			"tactic": "credential-access",
+			"score": 16,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, AC-7, CA-7, CM-2, CM-5, CM-6, CM-7, IA-2, IA-5, SC-39, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1556",
+			"tactic": "defense-evasion",
+			"score": 16,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, AC-7, CA-7, CM-2, CM-5, CM-6, CM-7, IA-2, IA-5, SC-39, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1556",
+			"tactic": "persistence",
+			"score": 16,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, AC-7, CA-7, CM-2, CM-5, CM-6, CM-7, IA-2, IA-5, SC-39, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1563.001",
+			"tactic": "lateral-movement",
+			"score": 17,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-3, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, CM-7, CM-8, IA-2, IA-5, RA-5, SC-12, SC-23, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1564.004",
+			"tactic": "defense-evasion",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-3, CA-7, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1565",
+			"tactic": "impact",
+			"score": 26,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-18, AC-19, AC-20, AC-3, AC-4, CA-7, CM-2, CM-6, CM-7, CM-8, CP-10, CP-6, CP-7, CP-9, SC-28, SC-36, SC-4, SC-46, SC-7, SI-12, SI-16, SI-23, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1565.003",
+			"tactic": "impact",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-6, CM-7, CP-9, SC-28, SC-4, SC-46, SC-7, SI-16, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1565.001",
+			"tactic": "impact",
+			"score": 23,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-18, AC-19, AC-20, AC-3, CA-7, CM-2, CM-6, CM-8, CP-10, CP-6, CP-7, CP-9, SC-28, SC-36, SC-4, SC-7, SI-12, SI-16, SI-23, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1569.002",
+			"tactic": "execution",
+			"score": 13,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, CM-7, IA-2, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.004",
+			"tactic": "persistence",
+			"score": 13,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-7, CM-2, CM-6, CM-8, RA-5, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.004",
+			"tactic": "privilege-escalation",
+			"score": 13,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-7, CM-2, CM-6, CM-8, RA-5, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.004",
+			"tactic": "defense-evasion",
+			"score": 13,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-7, CM-2, CM-6, CM-8, RA-5, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.007",
+			"tactic": "persistence",
+			"score": 16,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-7, CA-8, CM-2, CM-6, CM-7, CM-8, RA-5, SI-10, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.007",
+			"tactic": "privilege-escalation",
+			"score": 16,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-7, CA-8, CM-2, CM-6, CM-7, CM-8, RA-5, SI-10, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.007",
+			"tactic": "defense-evasion",
+			"score": 16,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-7, CA-8, CM-2, CM-6, CM-7, CM-8, RA-5, SI-10, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.008",
+			"tactic": "persistence",
+			"score": 16,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-7, CA-8, CM-2, CM-6, CM-7, CM-8, RA-5, SI-10, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.008",
+			"tactic": "privilege-escalation",
+			"score": 16,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-7, CA-8, CM-2, CM-6, CM-7, CM-8, RA-5, SI-10, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.008",
+			"tactic": "defense-evasion",
+			"score": 16,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-7, CA-8, CM-2, CM-6, CM-7, CM-8, RA-5, SI-10, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.009",
+			"tactic": "persistence",
+			"score": 16,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-7, CA-8, CM-2, CM-6, CM-7, CM-8, RA-5, SI-10, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.009",
+			"tactic": "privilege-escalation",
+			"score": 16,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-7, CA-8, CM-2, CM-6, CM-7, CM-8, RA-5, SI-10, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.009",
+			"tactic": "defense-evasion",
+			"score": 16,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-7, CA-8, CM-2, CM-6, CM-7, CM-8, RA-5, SI-10, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1037.001",
+			"tactic": "persistence",
+			"score": 2,
+			"color": "",
+			"comment": "Mitigated by AC-17, CM-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1037.001",
+			"tactic": "privilege-escalation",
+			"score": 2,
+			"color": "",
+			"comment": "Mitigated by AC-17, CM-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1112",
+			"tactic": "defense-evasion",
+			"score": 2,
+			"color": "",
+			"comment": "Mitigated by AC-6, CM-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1553",
+			"tactic": "defense-evasion",
+			"score": 19,
+			"color": "",
+			"comment": "Mitigated by AC-6, CA-8, CM-10, CM-2, CM-3, CM-5, CM-6, CM-7, CM-8, IA-7, IA-9, RA-9, SA-10, SA-11, SC-34, SI-10, SI-2, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1553.006",
+			"tactic": "defense-evasion",
+			"score": 13,
+			"color": "",
+			"comment": "Mitigated by AC-6, CA-8, CM-3, CM-5, CM-7, CM-8, IA-7, RA-9, SA-10, SA-11, SC-34, SI-2, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.011",
+			"tactic": "persistence",
+			"score": 2,
+			"color": "",
+			"comment": "Mitigated by AC-6, CM-5",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.011",
+			"tactic": "privilege-escalation",
+			"score": 2,
+			"color": "",
+			"comment": "Mitigated by AC-6, CM-5",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.011",
+			"tactic": "defense-evasion",
+			"score": 2,
+			"color": "",
+			"comment": "Mitigated by AC-6, CM-5",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.002",
+			"tactic": "persistence",
+			"score": 5,
+			"color": "",
+			"comment": "Mitigated by CM-6, SC-39, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.002",
+			"tactic": "privilege-escalation",
+			"score": 5,
+			"color": "",
+			"comment": "Mitigated by CM-6, SC-39, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.008",
+			"tactic": "persistence",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, RA-5, SC-39, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.008",
+			"tactic": "privilege-escalation",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, RA-5, SC-39, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.005",
+			"tactic": "persistence",
+			"score": 5,
+			"color": "",
+			"comment": "Mitigated by CM-6, SC-39, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.005",
+			"tactic": "privilege-escalation",
+			"score": 5,
+			"color": "",
+			"comment": "Mitigated by CM-6, SC-39, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556.001",
+			"tactic": "credential-access",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, AC-7, CA-7, CM-5, CM-6, IA-2, IA-5, SC-39, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556.001",
+			"tactic": "defense-evasion",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, AC-7, CA-7, CM-5, CM-6, IA-2, IA-5, SC-39, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556.001",
+			"tactic": "persistence",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, AC-7, CA-7, CM-5, CM-6, IA-2, IA-5, SC-39, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003.008",
+			"tactic": "credential-access",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, IA-2, IA-5, SC-28, SC-39, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1003.007",
+			"tactic": "credential-access",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, IA-2, IA-5, SC-28, SC-39, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1021.003",
+			"tactic": "lateral-movement",
+			"score": 19,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-3, AC-4, AC-5, AC-6, CM-2, CM-5, CM-6, CM-7, CM-8, IA-2, RA-5, SC-18, SC-3, SC-46, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1021.002",
+			"tactic": "lateral-movement",
+			"score": 16,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-3, AC-4, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, CM-7, IA-2, SC-7, SI-10, SI-15, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1021.006",
+			"tactic": "lateral-movement",
+			"score": 16,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-3, AC-4, AC-5, AC-6, CM-2, CM-5, CM-6, CM-7, CM-8, IA-2, RA-5, SC-46, SC-7, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055",
+			"tactic": "defense-evasion",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, CM-6, IA-2, SC-18, SC-7, SI-2, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1055",
+			"tactic": "privilege-escalation",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, CM-6, IA-2, SC-18, SC-7, SI-2, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1055.008",
+			"tactic": "defense-evasion",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, CM-6, IA-2, SC-18, SC-7, SI-2, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.008",
+			"tactic": "privilege-escalation",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, CM-6, IA-2, SC-18, SC-7, SI-2, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1056.003",
+			"tactic": "collection",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, CM-6, IA-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1056.003",
+			"tactic": "credential-access",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, CM-6, IA-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059.001",
+			"tactic": "execution",
+			"score": 16,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-2, CM-5, CM-6, CM-8, IA-2, IA-8, IA-9, RA-5, SI-2, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.002",
+			"tactic": "defense-evasion",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, AC-7, CM-5, CM-6, IA-12, IA-2, IA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.002",
+			"tactic": "persistence",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, AC-7, CM-5, CM-6, IA-12, IA-2, IA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.002",
+			"tactic": "privilege-escalation",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, AC-7, CM-5, CM-6, IA-12, IA-2, IA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.002",
+			"tactic": "initial-access",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, AC-7, CM-5, CM-6, IA-12, IA-2, IA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.003",
+			"tactic": "defense-evasion",
+			"score": 19,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CM-5, CM-6, IA-12, IA-2, SA-10, SA-11, SA-15, SA-16, SA-17, SA-3, SA-4, SA-8, SC-28, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.003",
+			"tactic": "persistence",
+			"score": 19,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CM-5, CM-6, IA-12, IA-2, SA-10, SA-11, SA-15, SA-16, SA-17, SA-3, SA-4, SA-8, SC-28, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.003",
+			"tactic": "privilege-escalation",
+			"score": 19,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CM-5, CM-6, IA-12, IA-2, SA-10, SA-11, SA-15, SA-16, SA-17, SA-3, SA-4, SA-8, SC-28, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.003",
+			"tactic": "initial-access",
+			"score": 19,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CM-5, CM-6, IA-12, IA-2, SA-10, SA-11, SA-15, SA-16, SA-17, SA-3, SA-4, SA-8, SC-28, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1098",
+			"tactic": "persistence",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CM-5, CM-6, CM-7, IA-2, SC-46, SC-7, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1098.003",
+			"tactic": "persistence",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, CM-5, CM-6, IA-2, IA-5, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1098.001",
+			"tactic": "persistence",
+			"score": 15,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-4, AC-5, AC-6, CM-5, CM-6, CM-7, IA-2, IA-5, SC-46, SC-7, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1098.002",
+			"tactic": "persistence",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, CM-5, CM-6, IA-2, IA-5, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1136.003",
+			"tactic": "persistence",
+			"score": 15,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-4, AC-5, AC-6, CM-5, CM-6, CM-7, IA-2, IA-5, SC-46, SC-7, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1136",
+			"tactic": "persistence",
+			"score": 15,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-4, AC-5, AC-6, CM-5, CM-6, CM-7, IA-2, IA-5, SC-46, SC-7, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1136.002",
+			"tactic": "persistence",
+			"score": 15,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-4, AC-5, AC-6, CM-5, CM-6, CM-7, IA-2, IA-5, SC-46, SC-7, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1136.001",
+			"tactic": "persistence",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, CM-5, CM-6, IA-2, IA-5, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218.007",
+			"tactic": "defense-evasion",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-2, CM-5, CM-6, CM-7, IA-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218",
+			"tactic": "defense-evasion",
+			"score": 15,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, CM-7, CM-8, IA-2, RA-5, SI-10, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1495",
+			"tactic": "impact",
+			"score": 16,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-3, CM-5, CM-6, CM-8, IA-2, IA-7, RA-9, SA-10, SA-11, SI-2, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1505.001",
+			"tactic": "persistence",
+			"score": 21,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-11, CM-2, CM-5, CM-6, CM-8, IA-2, IA-9, RA-5, SA-10, SA-11, SI-4, SI-7, SR-11, SR-4, SR-5, SR-6",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1505",
+			"tactic": "persistence",
+			"score": 21,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-11, CM-2, CM-5, CM-6, CM-8, IA-2, IA-9, RA-5, SA-10, SA-11, SI-4, SI-7, SR-11, SR-4, SR-5, SR-6",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1505.002",
+			"tactic": "persistence",
+			"score": 21,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-11, CM-2, CM-5, CM-6, CM-8, IA-2, IA-9, RA-5, SA-10, SA-11, SI-4, SI-7, SR-11, SR-4, SR-5, SR-6",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1525",
+			"tactic": "persistence",
+			"score": 16,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-2, CM-5, CM-6, CM-7, IA-2, IA-9, RA-5, SI-2, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1542.003",
+			"tactic": "persistence",
+			"score": 18,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-3, CM-5, CM-6, CM-8, IA-2, IA-7, IA-8, RA-9, SA-10, SA-11, SC-34, SI-2, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1542.003",
+			"tactic": "defense-evasion",
+			"score": 18,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-3, CM-5, CM-6, CM-8, IA-2, IA-7, IA-8, RA-9, SA-10, SA-11, SC-34, SI-2, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1542",
+			"tactic": "defense-evasion",
+			"score": 19,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-3, CM-5, CM-6, CM-8, IA-2, IA-7, IA-8, RA-9, SA-10, SA-11, SC-34, SC-7, SI-2, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1542",
+			"tactic": "persistence",
+			"score": 19,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-3, CM-5, CM-6, CM-8, IA-2, IA-7, IA-8, RA-9, SA-10, SA-11, SC-34, SC-7, SI-2, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1542.001",
+			"tactic": "persistence",
+			"score": 18,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-3, CM-5, CM-6, CM-8, IA-2, IA-7, IA-8, RA-9, SA-10, SA-11, SC-34, SI-2, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1542.001",
+			"tactic": "defense-evasion",
+			"score": 18,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-3, CM-5, CM-6, CM-8, IA-2, IA-7, IA-8, RA-9, SA-10, SA-11, SC-34, SI-2, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1542.005",
+			"tactic": "defense-evasion",
+			"score": 24,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CA-8, CM-2, CM-3, CM-5, CM-6, CM-7, CM-8, IA-2, IA-7, IA-8, RA-5, RA-9, SA-10, SA-11, SC-34, SC-7, SI-2, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1542.005",
+			"tactic": "persistence",
+			"score": 24,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-7, CA-8, CM-2, CM-3, CM-5, CM-6, CM-7, CM-8, IA-2, IA-7, IA-8, RA-5, RA-9, SA-10, SA-11, SC-34, SC-7, SI-2, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.006",
+			"tactic": "persistence",
+			"score": 13,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, CM-6, CM-7, IA-2, SI-10, SI-2, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547.006",
+			"tactic": "privilege-escalation",
+			"score": 13,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CM-5, CM-6, CM-7, IA-2, SI-10, SI-2, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1548.002",
+			"tactic": "privilege-escalation",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-2, CM-5, CM-6, IA-2, RA-5, SI-2, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1548.002",
+			"tactic": "defense-evasion",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-5, AC-6, CA-8, CM-2, CM-5, CM-6, IA-2, RA-5, SI-2, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1552.007",
+			"tactic": "credential-access",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-23, AC-3, AC-4, AC-5, AC-6, CM-5, CM-6, CM-7, IA-2, SC-46, SC-7, SC-8",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1552.002",
+			"tactic": "credential-access",
+			"score": 18,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-3, AC-5, AC-6, CA-7, CA-8, CM-5, CM-6, IA-2, IA-5, RA-5, SA-11, SA-15, SC-12, SC-28, SC-4, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556.004",
+			"tactic": "credential-access",
+			"score": 13,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, AC-7, CM-2, CM-5, CM-6, IA-2, IA-5, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556.004",
+			"tactic": "defense-evasion",
+			"score": 13,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, AC-7, CM-2, CM-5, CM-6, IA-2, IA-5, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556.004",
+			"tactic": "persistence",
+			"score": 13,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, AC-7, CM-2, CM-5, CM-6, IA-2, IA-5, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556.003",
+			"tactic": "credential-access",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, AC-7, CM-5, CM-6, IA-2, IA-5, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556.003",
+			"tactic": "defense-evasion",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, AC-7, CM-5, CM-6, IA-2, IA-5, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556.003",
+			"tactic": "persistence",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, AC-7, CM-5, CM-6, IA-2, IA-5, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1558.003",
+			"tactic": "credential-access",
+			"score": 19,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-18, AC-19, AC-2, AC-3, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, IA-2, IA-5, SC-4, SI-12, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1558.002",
+			"tactic": "credential-access",
+			"score": 19,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-18, AC-19, AC-2, AC-3, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, IA-2, IA-5, SC-4, SI-12, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1559.001",
+			"tactic": "execution",
+			"score": 13,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CM-2, CM-5, CM-6, IA-2, SC-18, SC-3, SC-7, SI-3",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1559",
+			"tactic": "execution",
+			"score": 19,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CM-10, CM-2, CM-5, CM-6, CM-7, CM-8, IA-2, RA-5, SC-18, SC-3, SC-7, SI-2, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1599.001",
+			"tactic": "defense-evasion",
+			"score": 18,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, CM-7, IA-2, IA-5, SC-28, SC-7, SI-10, SI-15, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1599",
+			"tactic": "defense-evasion",
+			"score": 18,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-7, CM-2, CM-5, CM-6, CM-7, IA-2, IA-5, SC-28, SC-7, SI-10, SI-15, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1601.002",
+			"tactic": "defense-evasion",
+			"score": 26,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-8, CM-2, CM-3, CM-5, CM-6, CM-7, CM-8, IA-2, IA-5, IA-7, RA-9, SA-10, SA-11, SC-34, SI-2, SI-4, SI-7, SR-11, SR-4, SR-5, SR-6",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1601",
+			"tactic": "defense-evasion",
+			"score": 26,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-8, CM-2, CM-3, CM-5, CM-6, CM-7, CM-8, IA-2, IA-5, IA-7, RA-9, SA-10, SA-11, SC-34, SI-2, SI-4, SI-7, SR-11, SR-4, SR-5, SR-6",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1601.001",
+			"tactic": "defense-evasion",
+			"score": 26,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CA-8, CM-2, CM-3, CM-5, CM-6, CM-7, CM-8, IA-2, IA-5, IA-7, RA-9, SA-10, SA-11, SC-34, SI-2, SI-4, SI-7, SR-11, SR-4, SR-5, SR-6",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1609",
+			"tactic": "execution",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-3, AC-6, CM-6, CM-7, SC-7, SI-10, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1611",
+			"tactic": "privilege-escalation",
+			"score": 20,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-3, AC-4, AC-5, AC-6, CM-5, CM-6, CM-7, IA-2, SC-18, SC-2, SC-3, SC-34, SC-39, SC-7, SI-16, SI-2, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1612",
+			"tactic": "defense-evasion",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-3, AC-6, CA-8, CM-6, CM-7, RA-5, SA-11, SC-7, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.001",
+			"tactic": "defense-evasion",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-5, AC-6, CA-7, SA-10, SA-11, SA-15, SA-16, SA-17, SA-3, SA-4, SA-8, SC-28, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.001",
+			"tactic": "persistence",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-5, AC-6, CA-7, SA-10, SA-11, SA-15, SA-16, SA-17, SA-3, SA-4, SA-8, SC-28, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.001",
+			"tactic": "privilege-escalation",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-5, AC-6, CA-7, SA-10, SA-11, SA-15, SA-16, SA-17, SA-3, SA-4, SA-8, SC-28, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078.001",
+			"tactic": "initial-access",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-5, AC-6, CA-7, SA-10, SA-11, SA-15, SA-16, SA-17, SA-3, SA-4, SA-8, SC-28, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1110.002",
+			"tactic": "credential-access",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, AC-7, CA-7, CM-2, CM-6, IA-11, IA-2, IA-4, IA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1110.001",
+			"tactic": "credential-access",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, AC-7, CA-7, CM-2, CM-6, IA-11, IA-2, IA-4, IA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1110.003",
+			"tactic": "credential-access",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-2, AC-20, AC-3, AC-5, AC-6, AC-7, CA-7, CM-2, CM-6, IA-11, IA-2, IA-4, IA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1187",
+			"tactic": "credential-access",
+			"score": 10,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-2, CM-6, CM-7, SC-7, SI-10, SI-15, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1201",
+			"tactic": "discovery",
+			"score": 5,
+			"color": "",
+			"comment": "Mitigated by CA-7, CM-2, CM-6, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1555",
+			"tactic": "credential-access",
+			"score": 3,
+			"color": "",
+			"comment": "Mitigated by CA-7, IA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1555.001",
+			"tactic": "credential-access",
+			"score": 3,
+			"color": "",
+			"comment": "Mitigated by CA-7, IA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1555.002",
+			"tactic": "credential-access",
+			"score": 3,
+			"color": "",
+			"comment": "Mitigated by CA-7, IA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1555.005",
+			"tactic": "credential-access",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, IA-2, IA-5, SI-2, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1558.004",
+			"tactic": "credential-access",
+			"score": 20,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-18, AC-19, AC-2, AC-3, CA-7, CA-8, CM-2, CM-6, IA-2, IA-5, RA-5, SA-11, SA-15, SC-4, SI-12, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1011.001",
+			"tactic": "exfiltration",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-18, CM-2, CM-6, CM-7, CM-8, RA-5, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1011",
+			"tactic": "exfiltration",
+			"score": 4,
+			"color": "",
+			"comment": "Mitigated by AC-18, CM-6, CM-7, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1087",
+			"tactic": "discovery",
+			"score": 3,
+			"color": "",
+			"comment": "Mitigated by CM-6, CM-7, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1087.002",
+			"tactic": "discovery",
+			"score": 3,
+			"color": "",
+			"comment": "Mitigated by CM-6, CM-7, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1087.001",
+			"tactic": "discovery",
+			"score": 3,
+			"color": "",
+			"comment": "Mitigated by CM-6, CM-7, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1092",
+			"tactic": "command-and-control",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-7, CM-8, MP-7, RA-5, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1135",
+			"tactic": "discovery",
+			"score": 3,
+			"color": "",
+			"comment": "Mitigated by CM-6, CM-7, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1490",
+			"tactic": "impact",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-6, CM-2, CM-6, CM-7, CP-10, CP-2, CP-7, CP-9, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.008",
+			"tactic": "privilege-escalation",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by CM-10, CM-6, CM-7, SI-10, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.008",
+			"tactic": "persistence",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by CM-10, CM-6, CM-7, SI-10, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1548.001",
+			"tactic": "privilege-escalation",
+			"score": 3,
+			"color": "",
+			"comment": "Mitigated by CM-6, CM-7, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1548.001",
+			"tactic": "defense-evasion",
+			"score": 3,
+			"color": "",
+			"comment": "Mitigated by CM-6, CM-7, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1552.003",
+			"tactic": "credential-access",
+			"score": 4,
+			"color": "",
+			"comment": "Mitigated by CM-6, CM-7, SC-28, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1553.004",
+			"tactic": "defense-evasion",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by CM-10, CM-6, CM-7, IA-9, SC-20, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556.002",
+			"tactic": "credential-access",
+			"score": 3,
+			"color": "",
+			"comment": "Mitigated by CM-6, CM-7, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556.002",
+			"tactic": "defense-evasion",
+			"score": 3,
+			"color": "",
+			"comment": "Mitigated by CM-6, CM-7, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556.002",
+			"tactic": "persistence",
+			"score": 3,
+			"color": "",
+			"comment": "Mitigated by CM-6, CM-7, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1562.003",
+			"tactic": "defense-evasion",
+			"score": 4,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-7, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1564.002",
+			"tactic": "defense-evasion",
+			"score": 3,
+			"color": "",
+			"comment": "Mitigated by CM-6, CM-7, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.006",
+			"tactic": "persistence",
+			"score": 4,
+			"color": "",
+			"comment": "Mitigated by CM-6, CM-7, SI-10, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.006",
+			"tactic": "privilege-escalation",
+			"score": 4,
+			"color": "",
+			"comment": "Mitigated by CM-6, CM-7, SI-10, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.006",
+			"tactic": "defense-evasion",
+			"score": 4,
+			"color": "",
+			"comment": "Mitigated by CM-6, CM-7, SI-10, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1119",
+			"tactic": "collection",
+			"score": 17,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-18, AC-19, AC-20, CM-2, CM-6, CM-8, CP-6, CP-7, CP-9, SC-36, SC-4, SI-12, SI-23, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1046",
+			"tactic": "discovery",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, CM-7, CM-8, RA-5, SC-46, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1048",
+			"tactic": "exfiltration",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-2, CM-6, CM-7, SC-46, SC-7, SI-10, SI-15, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1048.002",
+			"tactic": "exfiltration",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-2, CM-6, CM-7, SC-46, SC-7, SI-10, SI-15, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1048.001",
+			"tactic": "exfiltration",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-2, CM-6, CM-7, SC-46, SC-7, SI-10, SI-15, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1048.003",
+			"tactic": "exfiltration",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-2, CM-6, CM-7, SC-46, SC-7, SI-10, SI-15, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1095",
+			"tactic": "command-and-control",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-2, CM-6, CM-7, SC-7, SI-10, SI-15, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1133",
+			"tactic": "persistence",
+			"score": 18,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-20, AC-23, AC-3, AC-4, AC-6, AC-7, CM-2, CM-6, CM-7, CM-8, IA-2, IA-5, RA-5, SC-46, SC-7, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1133",
+			"tactic": "initial-access",
+			"score": 18,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-20, AC-23, AC-3, AC-4, AC-6, AC-7, CM-2, CM-6, CM-7, CM-8, IA-2, IA-5, RA-5, SC-46, SC-7, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1199",
+			"tactic": "initial-access",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, AC-6, AC-8, CM-6, CM-7, SC-46, SC-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1482",
+			"tactic": "discovery",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-8, CM-6, CM-7, RA-5, SA-17, SA-8, SC-46, SC-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1557.001",
+			"tactic": "credential-access",
+			"score": 15,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-2, CM-6, CM-7, CM-8, SC-23, SC-46, SC-7, SC-8, SI-10, SI-15, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1557.001",
+			"tactic": "collection",
+			"score": 15,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-2, CM-6, CM-7, CM-8, SC-23, SC-46, SC-7, SC-8, SI-10, SI-15, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1571",
+			"tactic": "command-and-control",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, CM-7, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1602",
+			"tactic": "collection",
+			"score": 25,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-18, AC-19, AC-20, AC-3, AC-4, CA-7, CM-2, CM-6, CM-7, CM-8, IA-3, IA-4, SC-28, SC-3, SC-4, SC-7, SC-8, SI-10, SI-12, SI-15, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1602.002",
+			"tactic": "collection",
+			"score": 25,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-18, AC-19, AC-20, AC-3, AC-4, CA-7, CM-2, CM-6, CM-7, CM-8, IA-3, IA-4, SC-28, SC-3, SC-4, SC-7, SC-8, SI-10, SI-12, SI-15, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1602.001",
+			"tactic": "collection",
+			"score": 25,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-18, AC-19, AC-20, AC-3, AC-4, CA-7, CM-2, CM-6, CM-7, CM-8, IA-3, IA-4, SC-28, SC-3, SC-4, SC-7, SC-8, SI-10, SI-12, SI-15, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1001",
+			"tactic": "command-and-control",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1001.001",
+			"tactic": "command-and-control",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1001.003",
+			"tactic": "command-and-control",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1001.002",
+			"tactic": "command-and-control",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1008",
+			"tactic": "command-and-control",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, CM-7, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1029",
+			"tactic": "exfiltration",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1030",
+			"tactic": "exfiltration",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1041",
+			"tactic": "exfiltration",
+			"score": 5,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1071",
+			"tactic": "command-and-control",
+			"score": 15,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, CM-7, SC-10, SC-20, SC-21, SC-22, SC-23, SC-31, SC-37, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1071.004",
+			"tactic": "command-and-control",
+			"score": 18,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-2, CM-6, CM-7, SC-10, SC-20, SC-21, SC-22, SC-23, SC-31, SC-37, SC-7, SI-10, SI-15, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1071.002",
+			"tactic": "command-and-control",
+			"score": 15,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, CM-7, SC-10, SC-20, SC-21, SC-22, SC-23, SC-31, SC-37, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1071.003",
+			"tactic": "command-and-control",
+			"score": 15,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, CM-7, SC-10, SC-20, SC-21, SC-22, SC-23, SC-31, SC-37, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1071.001",
+			"tactic": "command-and-control",
+			"score": 15,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, CM-7, SC-10, SC-20, SC-21, SC-22, SC-23, SC-31, SC-37, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1090.002",
+			"tactic": "command-and-control",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, CM-7, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1090.001",
+			"tactic": "command-and-control",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, CM-7, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1104",
+			"tactic": "command-and-control",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, CM-7, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1105",
+			"tactic": "command-and-control",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, CM-7, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1132",
+			"tactic": "command-and-control",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1132.002",
+			"tactic": "command-and-control",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1132.001",
+			"tactic": "command-and-control",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1219",
+			"tactic": "command-and-control",
+			"score": 13,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-3, AC-4, CA-7, CM-2, CM-6, CM-7, SC-7, SI-10, SI-15, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1542.004",
+			"tactic": "defense-evasion",
+			"score": 20,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-6, CA-7, CA-8, CM-2, CM-3, CM-5, CM-6, CM-7, CM-8, IA-7, RA-5, RA-9, SA-10, SA-11, SC-34, SC-7, SI-2, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1542.004",
+			"tactic": "persistence",
+			"score": 20,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-6, CA-7, CA-8, CM-2, CM-3, CM-5, CM-6, CM-7, CM-8, IA-7, RA-5, RA-9, SA-10, SA-11, SC-34, SC-7, SI-2, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1570",
+			"tactic": "lateral-movement",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-2, CM-6, CM-7, SC-7, SI-10, SI-15, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1572",
+			"tactic": "command-and-control",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-2, CM-6, CM-7, SC-7, SI-10, SI-15, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1573.001",
+			"tactic": "command-and-control",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-4, CA-7, CM-2, CM-6, CM-7, SC-12, SC-16, SC-23, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1040",
+			"tactic": "credential-access",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-18, AC-19, IA-2, IA-5, SC-4, SC-8, SI-12, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1040",
+			"tactic": "discovery",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-18, AC-19, IA-2, IA-5, SC-4, SC-8, SI-12, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1114",
+			"tactic": "collection",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-19, AC-20, AC-3, AC-4, CM-2, CM-6, IA-2, IA-5, SC-7, SI-12, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1114.002",
+			"tactic": "collection",
+			"score": 13,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-19, AC-20, AC-3, AC-4, CM-2, CM-6, IA-2, IA-5, SI-12, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1021.005",
+			"tactic": "lateral-movement",
+			"score": 23,
+			"color": "",
+			"comment": "Mitigated by AC-17, AC-2, AC-3, AC-4, AC-6, CA-7, CA-8, CM-11, CM-2, CM-3, CM-5, CM-6, CM-7, CM-8, IA-2, IA-4, IA-6, RA-5, SC-7, SI-10, SI-15, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059.006",
+			"tactic": "execution",
+			"score": 10,
+			"color": "",
+			"comment": "Mitigated by AC-6, CM-11, CM-3, CM-5, CM-7, SI-10, SI-2, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1052",
+			"tactic": "exfiltration",
+			"score": 10,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-6, CM-2, CM-6, CM-8, MP-7, RA-5, SC-41, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1052.001",
+			"tactic": "exfiltration",
+			"score": 10,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-6, CM-2, CM-6, CM-8, MP-7, RA-5, SC-41, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1091",
+			"tactic": "lateral-movement",
+			"score": 10,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-6, CM-2, CM-6, CM-8, MP-7, RA-5, SC-41, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1091",
+			"tactic": "initial-access",
+			"score": 10,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-6, CM-2, CM-6, CM-8, MP-7, RA-5, SC-41, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1200",
+			"tactic": "initial-access",
+			"score": 5,
+			"color": "",
+			"comment": "Mitigated by AC-20, AC-3, AC-6, MP-7, SC-41",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1090.003",
+			"tactic": "command-and-control",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-6, CM-7, SC-7, SI-10, SI-15",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1205.001",
+			"tactic": "defense-evasion",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-6, CM-7, SC-7, SI-15, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1205.001",
+			"tactic": "persistence",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-6, CM-7, SC-7, SI-15, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1205.001",
+			"tactic": "command-and-control",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-6, CM-7, SC-7, SI-15, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1205",
+			"tactic": "defense-evasion",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-2, CM-6, CM-7, SC-7, SI-15, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1205",
+			"tactic": "persistence",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-2, CM-6, CM-7, SC-7, SI-15, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1205",
+			"tactic": "command-and-control",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-2, CM-6, CM-7, SC-7, SI-15, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1218.012",
+			"tactic": "defense-evasion",
+			"score": 13,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-2, CM-6, CM-7, CM-8, RA-5, SC-7, SI-10, SI-15, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1498.001",
+			"tactic": "impact",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-6, CM-7, SC-7, SI-10, SI-15",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1498",
+			"tactic": "impact",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-6, CM-7, SC-7, SI-10, SI-15",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1498.002",
+			"tactic": "impact",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-6, CM-7, SC-7, SI-10, SI-15",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1499.003",
+			"tactic": "impact",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-6, CM-7, SC-7, SI-10, SI-15, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1499.004",
+			"tactic": "impact",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-6, CM-7, SC-7, SI-10, SI-15, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1499",
+			"tactic": "impact",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-6, CM-7, SC-7, SI-10, SI-15, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1499.001",
+			"tactic": "impact",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-6, CM-7, SC-7, SI-10, SI-15, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1499.002",
+			"tactic": "impact",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-4, CA-7, CM-6, CM-7, SC-7, SI-10, SI-15, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1552.005",
+			"tactic": "credential-access",
+			"score": 13,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-20, AC-3, AC-4, CA-7, CM-6, CM-7, IA-3, IA-4, SC-7, SI-10, SI-15, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059.002",
+			"tactic": "execution",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-7, IA-9, SI-10, SI-4, SI-7, SR-11, SR-4, SR-5, SR-6",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059.004",
+			"tactic": "execution",
+			"score": 4,
+			"color": "",
+			"comment": "Mitigated by CM-7, SI-10, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059.003",
+			"tactic": "execution",
+			"score": 4,
+			"color": "",
+			"comment": "Mitigated by CM-7, SI-10, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1106",
+			"tactic": "execution",
+			"score": 1,
+			"color": "",
+			"comment": "Mitigated by CM-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1127",
+			"tactic": "defense-evasion",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-7, CM-8, RA-5, SI-10, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1129",
+			"tactic": "execution",
+			"score": 5,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-7, SI-10, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1216.001",
+			"tactic": "defense-evasion",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-7, SI-10, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1216",
+			"tactic": "defense-evasion",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-7, SI-10, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1218.003",
+			"tactic": "defense-evasion",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-7, CM-8, RA-5, SI-10, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218.004",
+			"tactic": "defense-evasion",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-7, CM-8, RA-5, SI-10, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218.005",
+			"tactic": "defense-evasion",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-7, CM-8, RA-5, SI-10, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218.008",
+			"tactic": "defense-evasion",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-7, CM-8, RA-5, SI-10, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218.009",
+			"tactic": "defense-evasion",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-7, CM-8, RA-5, SI-10, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1220",
+			"tactic": "defense-evasion",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-7, SI-10, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.009",
+			"tactic": "privilege-escalation",
+			"score": 3,
+			"color": "",
+			"comment": "Mitigated by CM-7, SI-10, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.009",
+			"tactic": "persistence",
+			"score": 3,
+			"color": "",
+			"comment": "Mitigated by CM-7, SI-10, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.010",
+			"tactic": "privilege-escalation",
+			"score": 5,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-7, SI-10, SI-2, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.010",
+			"tactic": "persistence",
+			"score": 5,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-7, SI-10, SI-2, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.006",
+			"tactic": "privilege-escalation",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-7, CM-8, IA-9, SI-10, SI-2, SI-3, SI-4, SI-7, SR-11, SR-4, SR-5, SR-6",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.006",
+			"tactic": "persistence",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-7, CM-8, IA-9, SI-10, SI-2, SI-3, SI-4, SI-7, SR-11, SR-4, SR-5, SR-6",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.002",
+			"tactic": "privilege-escalation",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-7, CM-8, RA-5, SI-10, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.002",
+			"tactic": "persistence",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-7, CM-8, RA-5, SI-10, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1548.004",
+			"tactic": "privilege-escalation",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-7, CM-8, SC-18, SC-34, SI-12, SI-16, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1548.004",
+			"tactic": "defense-evasion",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-7, CM-8, SC-18, SC-34, SI-12, SI-16, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1553.001",
+			"tactic": "defense-evasion",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-7, SI-10, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1553.005",
+			"tactic": "defense-evasion",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-7, SI-10, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1564.003",
+			"tactic": "defense-evasion",
+			"score": 3,
+			"color": "",
+			"comment": "Mitigated by CM-7, SI-10, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1564.006",
+			"tactic": "defense-evasion",
+			"score": 7,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-7, CM-8, SI-10, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.001",
+			"tactic": "persistence",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by CA-8, CM-2, CM-6, CM-7, RA-5, SI-10, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.001",
+			"tactic": "privilege-escalation",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by CA-8, CM-2, CM-6, CM-7, RA-5, SI-10, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574.001",
+			"tactic": "defense-evasion",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by CA-8, CM-2, CM-6, CM-7, RA-5, SI-10, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.004",
+			"tactic": "defense-evasion",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by AC-6, SC-18, SC-7, SI-2, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.004",
+			"tactic": "privilege-escalation",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by AC-6, SC-18, SC-7, SI-2, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.001",
+			"tactic": "defense-evasion",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by AC-6, SC-18, SC-7, SI-2, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.001",
+			"tactic": "privilege-escalation",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by AC-6, SC-18, SC-7, SI-2, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.011",
+			"tactic": "defense-evasion",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by AC-6, SC-18, SC-7, SI-2, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.011",
+			"tactic": "privilege-escalation",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by AC-6, SC-18, SC-7, SI-2, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.002",
+			"tactic": "defense-evasion",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by AC-6, SC-18, SC-7, SI-2, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.002",
+			"tactic": "privilege-escalation",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by AC-6, SC-18, SC-7, SI-2, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.013",
+			"tactic": "defense-evasion",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by AC-6, SC-18, SC-7, SI-2, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.013",
+			"tactic": "privilege-escalation",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by AC-6, SC-18, SC-7, SI-2, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.012",
+			"tactic": "defense-evasion",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by AC-6, SC-18, SC-7, SI-2, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.012",
+			"tactic": "privilege-escalation",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by AC-6, SC-18, SC-7, SI-2, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.003",
+			"tactic": "defense-evasion",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by AC-6, SC-18, SC-7, SI-2, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.003",
+			"tactic": "privilege-escalation",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by AC-6, SC-18, SC-7, SI-2, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.005",
+			"tactic": "defense-evasion",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by AC-6, SC-18, SC-7, SI-2, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.005",
+			"tactic": "privilege-escalation",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by AC-6, SC-18, SC-7, SI-2, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.014",
+			"tactic": "defense-evasion",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by AC-6, SC-18, SC-7, SI-2, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055.014",
+			"tactic": "privilege-escalation",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by AC-6, SC-18, SC-7, SI-2, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1559.002",
+			"tactic": "execution",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-4, AC-6, CM-10, CM-2, CM-6, CM-7, CM-8, RA-5, SC-18, SC-3, SC-7, SI-2, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1020.001",
+			"tactic": "exfiltration",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-18, AC-19, AC-20, CM-2, CM-6, CM-8, SC-4, SI-12, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1114.003",
+			"tactic": "collection",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-19, AC-20, AC-4, SC-7, SI-12, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1114.001",
+			"tactic": "collection",
+			"score": 8,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-19, AC-20, AC-4, SI-12, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1565.002",
+			"tactic": "impact",
+			"score": 12,
+			"color": "",
+			"comment": "Mitigated by AC-16, AC-17, AC-18, AC-19, AC-20, CM-2, CM-6, CM-8, SC-4, SI-12, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1127.001",
+			"tactic": "defense-evasion",
+			"score": 5,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-8, RA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1137",
+			"tactic": "persistence",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by AC-10, AC-17, CM-2, CM-6, CM-8, RA-5, SI-2, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1137.001",
+			"tactic": "persistence",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-8, RA-5, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.014",
+			"tactic": "privilege-escalation",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-8, RA-5, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.014",
+			"tactic": "persistence",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-8, RA-5, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1555.004",
+			"tactic": "credential-access",
+			"score": 5,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-7, IA-5, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1564.007",
+			"tactic": "defense-evasion",
+			"score": 4,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, CM-8, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1036.001",
+			"tactic": "defense-evasion",
+			"score": 5,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, IA-9, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546",
+			"tactic": "privilege-escalation",
+			"score": 4,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, IA-9, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1546",
+			"tactic": "persistence",
+			"score": 4,
+			"color": "",
+			"comment": "Mitigated by CM-2, CM-6, IA-9, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1554",
+			"tactic": "persistence",
+			"score": 9,
+			"color": "",
+			"comment": "Mitigated by CA-8, CM-2, CM-6, IA-9, SI-7, SR-11, SR-4, SR-5, SR-6",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1195.003",
+			"tactic": "initial-access",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by CA-8, CM-3, CM-5, CM-8, IA-7, RA-9, SA-10, SA-11, SC-34, SI-2, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1560",
+			"tactic": "collection",
+			"score": 5,
+			"color": "",
+			"comment": "Mitigated by CA-8, RA-5, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1560.001",
+			"tactic": "collection",
+			"score": 5,
+			"color": "",
+			"comment": "Mitigated by CA-8, RA-5, SC-7, SI-3, SI-4",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1203",
+			"tactic": "execution",
+			"score": 14,
+			"color": "",
+			"comment": "Mitigated by AC-4, AC-6, CA-7, CM-8, SC-18, SC-2, SC-29, SC-3, SC-30, SC-39, SC-7, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1027",
+			"tactic": "defense-evasion",
+			"score": 4,
+			"color": "",
+			"comment": "Mitigated by SI-2, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1027.002",
+			"tactic": "defense-evasion",
+			"score": 4,
+			"color": "",
+			"comment": "Mitigated by SI-2, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218.010",
+			"tactic": "defense-evasion",
+			"score": 4,
+			"color": "",
+			"comment": "Mitigated by CA-7, SI-10, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1218.011",
+			"tactic": "defense-evasion",
+			"score": 4,
+			"color": "",
+			"comment": "Mitigated by CA-7, SI-10, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1137.003",
+			"tactic": "persistence",
+			"score": 2,
+			"color": "",
+			"comment": "Mitigated by CM-2, SI-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1137.004",
+			"tactic": "persistence",
+			"score": 2,
+			"color": "",
+			"comment": "Mitigated by CM-2, SI-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1137.005",
+			"tactic": "persistence",
+			"score": 2,
+			"color": "",
+			"comment": "Mitigated by CM-2, SI-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.011",
+			"tactic": "privilege-escalation",
+			"score": 2,
+			"color": "",
+			"comment": "Mitigated by AC-6, SI-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546.011",
+			"tactic": "persistence",
+			"score": 2,
+			"color": "",
+			"comment": "Mitigated by AC-6, SI-2",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1485",
+			"tactic": "impact",
+			"score": 10,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-6, CM-2, CP-10, CP-2, CP-7, CP-9, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1486",
+			"tactic": "impact",
+			"score": 11,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-6, CM-2, CP-10, CP-2, CP-6, CP-7, CP-9, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1491",
+			"tactic": "impact",
+			"score": 10,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-6, CM-2, CP-10, CP-2, CP-7, CP-9, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1491.002",
+			"tactic": "impact",
+			"score": 10,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-6, CM-2, CP-10, CP-2, CP-7, CP-9, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1491.001",
+			"tactic": "impact",
+			"score": 10,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-6, CM-2, CP-10, CP-2, CP-7, CP-9, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1561.001",
+			"tactic": "impact",
+			"score": 10,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-6, CM-2, CP-10, CP-2, CP-7, CP-9, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1561.002",
+			"tactic": "impact",
+			"score": 10,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-6, CM-2, CP-10, CP-2, CP-7, CP-9, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1561",
+			"tactic": "impact",
+			"score": 10,
+			"color": "",
+			"comment": "Mitigated by AC-3, AC-6, CM-2, CP-10, CP-2, CP-7, CP-9, SI-3, SI-4, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1137.002",
+			"tactic": "persistence",
+			"score": 6,
+			"color": "",
+			"comment": "Mitigated by AC-10, AC-14, AC-17, AC-6, CM-2, CM-5",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1535",
+			"tactic": "defense-evasion",
+			"score": 1,
+			"color": "",
+			"comment": "Mitigated by SC-23",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1550.004",
+			"tactic": "defense-evasion",
+			"score": 3,
+			"color": "",
+			"comment": "Mitigated by SC-23, SC-8, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1550.004",
+			"tactic": "lateral-movement",
+			"score": 3,
+			"color": "",
+			"comment": "Mitigated by SC-23, SC-8, SI-7",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1583",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1595",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1020",
+			"tactic": "exfiltration",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1547",
+			"tactic": "persistence",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1547",
+			"tactic": "privilege-escalation",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1586",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1584",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1074",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1587",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1585",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1480",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1606",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1592",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1589",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1590",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1591",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1564",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1056",
+			"tactic": "collection",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1056",
+			"tactic": "credential-access",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1588",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1069",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1597",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1596",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1593",
+			"tactic": "reconnaissance",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1518",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1608",
+			"tactic": "resource-development",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1016",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1497",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1497",
+			"tactic": "discovery",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1600",
+			"tactic": "defense-evasion",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": true
+		}
+	],
+	"gradient": {
+		"colors": [
+			"#acd0e6",
+			"#08336e"
+		],
+		"minValue": 1,
+		"maxValue": 33
+	},
+	"legendItems": [],
+	"metadata": [],
+	"showTacticRowBackground": false,
+	"tacticRowBackground": "#dddddd",
+	"selectTechniquesAcrossTactics": true,
+	"selectSubtechniquesWithParent": false
+}

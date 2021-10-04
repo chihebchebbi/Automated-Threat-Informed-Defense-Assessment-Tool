@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="Resources/styles/style.css" rel="stylesheet">
+
+    <title>Automated Threat-Informed Defense Assessment Tool</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  </head>
+  <body>
+
+<div class="container-fluid">
+
+<!-- Header-->
+<header>
+    <div class="px-3 py-2 bg-dark text-white">
+      <div class="container">
+		<h4 style="text-align: center;">Azure Sentinel - Automated Threat-Informed Defense Assessment Tool</h4>
+      </div>
+    </div>
+
+  </header>
+
+
+  <div class="row">
+	<div class="col-md-4">
+		<div class="card border-light">
+			<div class="card-body">
+				<h5 class="card-title" style="text-align: center;">Report Summary</h5>
+			  
+				<ul class="list-group ">
+					<li class="list-group-item d-flex justify-content-between align-items-start">
+					  <div class="ms-2 me-auto">
+						<div class="fw-bold"><ion-icon name="calendar"></ion-icon> &nbsp;Time and Date</div>
+					  </div>
+					  <span class="badge bg-primary rounded-pill">{{ Nb_Time}}</span>
+					</li>
+					<li class="list-group-item d-flex justify-content-between align-items-start">
+					  <div class="ms-2 me-auto">
+						<div class="fw-bold"><ion-icon name="nuclear"></ion-icon> &nbsp;Threat Profile Techniques</div>
+					  </div>
+					  <span class="badge bg-primary rounded-pill">{{ Nb_Threats }}</span>
+					</li>
+					<li class="list-group-item d-flex justify-content-between align-items-start">
+					  <div class="ms-2 me-auto">
+						<div class="fw-bold"><ion-icon name="checkmark-circle-outline"></ion-icon> &nbsp;Azure Sentinel Covered Techniques</div>
+
+					  </div>
+					  <span class="badge bg-primary rounded-pill">{{ Nb_Coverage }}</span>
+					</li>
+					<li class="list-group-item d-flex justify-content-between align-items-start">
+						<div class="ms-2 me-auto">
+						  <div class="fw-bold"> <ion-icon name="unlock"></ion-icon> &nbsp;Related D3FEND Defenses</div>
+
+						</div>
+						<span class="badge bg-primary rounded-pill">{{ Nb_D3FEND }}</span>
+					  </li>
+					  <li class="list-group-item d-flex justify-content-between align-items-start">
+						<div class="ms-2 me-auto">
+						  <div class="fw-bold"><ion-icon name="locate"></ion-icon>&nbsp;Related SIGMA Rules</div>
+						 
+						</div>
+						<span class="badge bg-primary rounded-pill">{{ Nb_Sigma }}</span>
+					  </li>
+					  <li class="list-group-item d-flex justify-content-between align-items-start">
+						<div class="ms-2 me-auto">
+						  <div class="fw-bold"><ion-icon name="flask"></ion-icon>&nbsp; Related Atomic Tests</div>
+						
+						</div>
+						<span class="badge bg-primary rounded-pill">{{ Nb_Atomics }}</span>
+					  </li>
+
+
+				  </ul>
+			</div>
+		  </div>
+		</div>
+	
+		<div class="col-md-4">
+			<div class="card border-light">
+				<div class="card-body">
+					<h5 style="text-align: center;"> Azure Sentinel Coverage</h5>
+				  <div id="chart"></div>  
+
+					<script>
+
+
+var options = {
+          series: [{{ Coverage_Score }}],
+          chart: {
+          height: 250,
+          type: 'radialBar',
+        },
+        plotOptions: {
+          radialBar: {
+            hollow: {
+              size: '70%',
+            }
+          },
+        },
+        labels: ['Sentinel Coverage'],
+
+        }
+		;
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+
+					</script>
+				</div>
+			  </div>
+					</div>
+					
+
+					<div class="col-md-4">
+						<div class="card border-light">
+							<div class="card-body">
+								<h5 style="text-align: center;"> Threat Profile Tactics</h5>
+								 <div id="chart2"></div>  
+
+
+<script>
+
+var options = {
+          series: [{
+          name: 'Pourcentage of Techniques',
+          data: {{  Series }}
+        }],
+          chart: {
+          height: 250,
+          type: 'bar',
+        },
+        plotOptions: {
+          bar: {
+            
+            dataLabels: {
+              position: 'top', // top, center, bottom
+            },
+          }
+        },
+        dataLabels: {
+          enabled: true,
+          formatter: function (val) {
+            return val + "%";
+          },
+          offsetY: -20,
+          style: {
+            fontSize: '12px',
+            colors: ["#304758"]
+          }
+        },
+        
+        xaxis: {
+          categories: {{ Labels}},
+          position: 'top',
+          axisBorder: {
+            show: false
+          },
+          axisTicks: {
+            show: false
+          },
+          crosshairs: {
+            fill: {
+              type: 'gradient',
+              gradient: {
+                colorFrom: '#D8E3F0',
+                colorTo: '#BED1E6',
+                stops: [0, 100],
+                opacityFrom: 0.4,
+                opacityTo: 0.5,
+              }
+            }
+          },
+          tooltip: {
+            enabled: true,
+          }
+        },
+        yaxis: {
+          axisBorder: {
+            show: false
+          },
+          axisTicks: {
+            show: false,
+          },
+          labels: {
+            show: false,
+            formatter: function (val) {
+              return val + "%";
+            }
+          }
+        
+        },
+        title: {
+          text: 'Monthly Inflation in Argentina, 2002',
+          floating: true,
+          offsetY: 330,
+          align: 'center',
+          style: {
+            color: '#444'
+          }
+        }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart2"), options);
+        chart.render();
+
+</script>
+
+							</div>
+						  </div>
+								</div>
+	</div>
+
+
+
+<!-- Tables-->
+
+
+<!-- Threat Techniques Here -->
+
+
+<div class="row">
+	<div class="col-md-12">
+		<br>
+		<h5 style="text-align: center;">Threat Profile ATT&CK Techniques</h5> 
+		<br>	
+		
+<!-- Table ********-->
+
+<div class="table-wrapper-scroll-y my-custom-scrollbar">
+<table class="table  table-sm table-bordered" style="width: 100%;">
+	<thead class="table-dark">
+	  <tr>
+		<th  style="width: 20%;text-align: center;">ATT&CK Technique IDs</th>
+		<th  style="width: 20%;text-align: center;">ATT&CK Technique Name</th>
+		<th  style="width: 20%;text-align: center;">Tactics</th>
+		<th  style="width: 60%;text-align: center;">ATT&CK Technique Description</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  {% for Thrt in Rp_Threats %}
+	  <tr>
+		<td>{{Thrt.TechniqueID}}</td>
+		<td>{{Thrt.TechniqueName}}</td>
+		<td>{{Thrt.Phases}}</td>
+		<td>{{Thrt.Description}}</td>
+	  </tr>
+	  {% endfor %}
+	</tbody>
+  </table>
+  </div>
+
+<!-- Covered Techniques Here -->
+
+<div class="row">
+	<div class="col-md-12">
+		<br>
+		<h5 style="text-align: center;">Azure Sentinel ATT&CK Coverage</h5><br>	
+		
+<!-- Table ********-->
+
+<div class="table-wrapper-scroll-y my-custom-scrollbar">
+<table class="table  table-sm table-bordered" style="width: 100%">
+	<thead class="table-dark">
+	  
+	  <tr>
+		<th  style="width: 50%;text-align: center;">ATT&CK Technique IDs</th>
+		<th  style="width: 50%;text-align: center;">Azure Sentinel Capability</th>
+	  </tr>
+
+	</thead>
+	<tbody>
+	  {% for Cov in Rp_Coverage %}
+	  <tr>
+		<td>{{Cov.TechniqueID}}</td>
+		<td>{{Cov.Sentinel}}</td>
+	  </tr>
+	  {% endfor %}
+	</tbody>
+  </table>
+  </div>
+
+
+
+
+<div class="row">
+	<div class="col-md-12">
+		<br>
+		<h5 style="text-align: center;">Related Azure Native Security controls</h5><br>	
+		
+<!-- Table ********-->
+
+<div class="table-wrapper-scroll-y my-custom-scrollbar">
+<table class="table  table-sm table-bordered" style="width: 100%;">
+	<thead class="table-dark">
+	  
+	  <tr>
+		<th  style="width: 30%;text-align: center;">ATT&CK Technique IDs</th>
+		<th  style="width: 70%;text-align: center;">Azure Native Security Control</th>
+	  </tr>
+
+	</thead>
+	<tbody>
+	  {% for ctr in Rp_Controls %}
+	  <tr>
+		<td>{{ctr.TechniqueID}}</td>
+		<td>{{ctr.ControlDetails}}</td>
+	  </tr>
+	  {% endfor %}
+	</tbody>
+  </table>
+  </div>
+
+
+<div class="row">
+	<div class="col-md-12">
+		<br>
+		<h5 style="text-align: center;">D3FEND Defenses</h5><br>
+		
+		
+<!-- Table ********-->
+
+<div class="table-wrapper-scroll-y my-custom-scrollbar">
+<table class="table  table-sm table-bordered" style="width: 100%;">
+	<thead class="table-dark">
+	  
+	  <tr>
+		<th  style="width: 5%;text-align: center;">ID</th>
+		<th  style="width: 10%;text-align: center;">Defense</th>
+		<th  style="width: 20%;text-align: center;">Definition</th>
+		<th  style="width: 5%;text-align: center;">Analyzes</th>
+        <th  style="width: 5%;text-align: center;">Neutralizes</th>
+		<th  style="width: 5%;text-align: center;">Verifies</th>
+		<th  style="width: 5%;text-align: center;">Obfuscates</th>
+		<th  style="width: 5%;text-align: center;">Filters</th>
+        <th  style="width: 5%;text-align: center;">Encrypts</th>
+		<th  style="width: 5%;text-align: center;">Blocks</th>
+		<th  style="width: 5%;text-align: center;">Authenticates</th>
+		<th  style="width: 5%;text-align: center;">Terminates</th>
+ 	    <th  style="width: 5%;text-align: center;">Isolates</th>
+		<th  style="width: 5%;text-align: center;">Spoofs</th>
+		<th  style="width: 5%;text-align: center;">Disables</th>
+		<th  style="width: 5%;text-align: center;">Modifies</th>
+		<th  style="width: 5%;text-align: center;"> URL</th>
+	  </tr>
+
+	</thead>
+	<tbody>
+	  {% for df in Rp_D3FEND %}
+	  <tr>
+		<td>{{df.ID}}</td>
+		<td>{{df.Defense}}</td>
+		<td>{{df.Definition}}</td>
+		<td>{{df.Analyzes}}</td>
+        <td>{{df.Neutralizes}}</td>
+		<td>{{df.Verifies}}</td>
+		<td>{{df.Obfuscates}}</td>
+		<td>{{df.Filters}}</td>
+        <td>{{df.Encrypts}}</td>
+		<td>{{df.Blocks}}</td>
+		<td>{{df.Authenticates}}</td>
+		<td>{{df.Terminates}}</td>
+        <td>{{df.Isolates}}</td>
+		<td>{{df.Spoofs}}</td>
+		<td>{{df.Disables}}</td>
+		<td>{{df.Modifies}}</td>
+		<td><a href={{df.URL}}>URL</a></td>
+	
+	  </tr>
+	  {% endfor %}
+	</tbody>
+  </table>
+  </div>
+
+
+<!-- Table ********-->
+
+
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+		<br>
+		<h5 style="text-align: center;">Related NIST Mitigations</h5><br>	
+		
+<!-- Table ********-->
+
+<div class="table-wrapper-scroll-y my-custom-scrollbar">
+<table class="table  table-sm table-bordered" style="width: 100%;">
+	<thead class="table-dark">
+	  
+	  <tr>
+		<th  style="width: 10%;text-align: center;">Technique</th>
+		<th  style="width: 5%;text-align: center;">Mitigation ID</th>
+  <th  style="width: 15%;text-align: center;">Name</th>
+  <th  style="width: 70%;text-align: center;">Comment</th>
+
+	  </tr>
+
+	</thead>
+	<tbody>
+	  {% for m in Rp_NIST %}
+	  <tr>
+		<td>{{m.Technique}}</td>
+  <td>{{m.Control}}</td>
+  <td>{{m.Name}}</td>
+  <td>{{m.Comment}}</td>
+	  </tr>
+	  {% endfor %}
+	</tbody>
+  </table>
+  </div>
+
+
+<!-- Table ********-->
+
+
+	</div>
+</div>
+
+
+
+  <div class="row">
+		<div class="col-md-12">
+			<br>
+			<h5 style="text-align: center;">Related SIGMA Rules</h5><br>	
+			
+<!-- Table ********-->
+
+<div class="table-wrapper-scroll-y my-custom-scrollbar">
+	<table class="table  table-sm table-bordered" style="width: 100%;">
+		<thead class="table-dark">
+		  
+		  <tr>
+			<th  style="width: 50%;text-align: center;">ATT&CK Technique IDs</th>
+			<th  style="width: 50%;text-align: center;">Related SIGMA Rules</th>
+		  </tr>
+	
+		</thead>
+		<tbody>
+		  {% for sg in Rp_SIGMA %}
+		  <tr>
+			<td>{{sg.Techniques}}</td>
+      		<td>{{sg.Rule}}</td>
+		  </tr>
+		  {% endfor %}
+		</tbody>
+	  </table>
+	  </div>
+
+
+<!-- Table ********-->
+
+
+		</div>
+	</div>
+
+  <div class="row">
+		<div class="col-md-12">
+			<br>
+			<h5 style="text-align: center;">Related Atomic Tests</h5><br>	
+
+<div class="table-wrapper-scroll-y my-custom-scrollbar">
+	<table class="table  table-sm table-bordered" style="width: 100%;">
+		<thead class="table-dark">
+		  
+		  <tr>
+			<th  style="width: 50%;text-align: center;">ATT&CK Technique IDs</th>
+			<th  style="width: 50%;text-align: center;">Related Atomic Tests</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  {% for at in Rp_Atomics %}
+		  <tr>
+			<td>{{at.Technique}}</td>
+      <td><a href={{at.URL}}>{{at.URL}}</a></td>
+		  </tr>
+		  {% endfor %}
+		</tbody>
+	  </table>
+	  </div>
+
+
+<!-- Table ********-->
+
+
+		</div>
+	</div>
+
+
+
+	<div >
+		<p style="text-align: center;"><ion-icon name="logo-github" ></ion-icon> Generated by Automated Threat-Informed Defense Assessment Tool - 2021</p>
+		
+	  </div>
+
+</div>
+  </body>
+</html>
