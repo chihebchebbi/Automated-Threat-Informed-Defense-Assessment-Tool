@@ -98,7 +98,6 @@ python3 ATIDA.py
 
 ### Video Demonstration
 
-For a demonstration watch the following Video 
-[YouTube Demo]("https://www.youtube.com/watch?v=APRsV7jHIYY&ab_channel=ChihebChebbi") 
+For a demonstration watch the following Video: https://www.youtube.com/watch?v=APRsV7jHIYY&ab_channel=ChihebChebbi 
 
 
