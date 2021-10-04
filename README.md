@@ -100,4 +100,10 @@ python3 ATIDA.py
 
 For a demonstration watch the following Video: https://www.youtube.com/watch?v=APRsV7jHIYY&ab_channel=ChihebChebbi 
 
+### Some Used Resources:
 
+* ATT&CK in Excel: https://attack.mitre.org/resources/working-with-attack/ 
+* Azure Native Security Controls Mapping: https://github.com/center-for-threat-informed-defense/security-stack-mappings/tree/main/mappings/Azure/layers 
+* SP 800-53 Rev. 5 : https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final 
+* D3FEND https://d3fend.mitre.org/resources 
+* Atomic Red Team mapping: https://github.com/redcanaryco/atomic-red-team/tree/master/atomics/Indexes/Attack-Navigator-Layers 
