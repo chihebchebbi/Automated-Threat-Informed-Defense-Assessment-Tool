@@ -390,6 +390,7 @@ Watchlist =  list(dict.fromkeys(Watchlist))
 
 # --------------  Azure Native Security Controls -------------------- # 
 
+print(termcolor.colored("[+] Related Azure Native Security Controls","cyan"))
 print("[+] Azure Native Controls")
 
 Azure_Native_Security_Controls = "Resources/Layers/Azure_platform_native_security_controls.json"
@@ -419,6 +420,8 @@ for elm in Watchlist:
 
 # D3FEND
 
+print(termcolor.colored("[+] Related D3FEND Artifacts and Defenses","cyan"))
+
 with open(D3FEND_Techniques, newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     print("[+] D3FEND Techniques and Artifacts were loaded Successfully")
@@ -434,8 +437,7 @@ while '' in Artifacts:
    Artifacts.remove('')   #Deletes empty elements
 
 Artifacts = list(dict.fromkeys(Artifacts)) #Deletes Duplicates
-
-print("[+] Related D3FEND Artifacts were extracted Successfully")                              
+                           
 #print(Artifacts)        
 
 Total_Artifacts= []
@@ -491,7 +493,7 @@ Nb_D3FEND = len(Rp_D3FEND)
 
 # -------------------------  NIST Mitigations ---------------------------- # 
 
-print("[+] Related NIST MITIGATIONS")
+print(termcolor.colored("[+] Related NIST Mitigations","cyan"))
 
 with open(NIST_Mitigations_File,"r") as r:
   NIST = json.load(r)
@@ -513,7 +515,7 @@ for elm in Watchlist:
 
 # ------------------------- Sigma Rules -------------------------- #
 
-print("[+] Related SIGMA Rules")
+print(termcolor.colored("[+] Related Sigma Rules","cyan"))
 
 
 if os.path.isdir("Resources/sigma-master/") == False: # ! Check if Sigma Rules exist 
@@ -619,7 +621,7 @@ with pd.ExcelWriter('Reports/finalReport.xlsx') as writer:
     df_Coverage.to_excel(writer, sheet_name='Azure Sentinel Coverage')
     df_Threats.to_excel(writer, sheet_name='Threat Profile Techniques')
 
-
+print("[+] An Excel Report was generated Successfully")
 # Generate Web Report
 
 # datetime object containing current date and time
@@ -639,4 +641,4 @@ Coverage_Score=Coverage_Score,Series=Series,Labels=Labels)
 
 with open('Web-Report.html', 'w') as f:
     f.write(output)
-print("[+] A Web Page Report was generated Successfully")
+print("[+] A Web Page Report was generated Successfully") 
